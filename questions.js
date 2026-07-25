@@ -64,7 +64,7 @@ function genQuestion(topic){
   }
   if(topic==="20以內數的認識"){
     let n=randInt(11,19);
-    q=`「${n}」是由幾個十和幾個一組成？請選出「一位」的數字。`;
+    q=`「${n}」是由幾個十和幾個一組成？請選出「個位」的數字。`;
     ans=n%10;
     return {q, ans, opts: closeDistractors(ans,0,9,3)};
   }
